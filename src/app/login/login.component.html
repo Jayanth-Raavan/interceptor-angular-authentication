@@ -1,0 +1,28 @@
+<div class=" align-items-center">
+    <div class="form">
+        <div class="card pt-5 pb-5 pl-4 pr-4 m-5 w-50">
+            <div class="card-body w-100">
+                <h1 class="text-center text-primary">Login Page</h1>
+                <form [formGroup]="Login" (ngSubmit)="ProceedLogin()">
+                    <div class="mb-3">
+                        <label for="username">User Name</label>
+                        <div class="input-group">
+                            <input id="username" class="form-control" formControlName="username" placeholder="Enter username" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password">Password</label>
+                        <div class="input-group">
+                            <input id="password" class="form-control" formControlName="password" placeholder="Enter password" />
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="input-group">
+                            <button id="submit" class="btn btn-primary form-control">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

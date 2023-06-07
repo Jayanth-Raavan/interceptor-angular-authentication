@@ -1,0 +1,21 @@
+<table class="table table-bordered">
+    <thead>
+        <tr class="text-center">
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customerlist" class="text-center">
+            <td>{{customer.id}}</td>
+            <td>{{customer.username}}</td>
+            <td>{{customer.email}}</td>
+            <td>{{customer.phone}}</td>
+            <td><a class="btn btn-info">Edit</a> | <a class="btn btn-danger">Delete</a></td>
+        </tr>
+    </tbody>
+</table>
